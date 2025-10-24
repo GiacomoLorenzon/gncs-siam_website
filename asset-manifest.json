@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/gncs-siam_website/static/css/main.207066e3.css",
+    "main.js": "/gncs-siam_website/static/js/main.9e34168e.js",
+    "static/js/453.d41c405e.chunk.js": "/gncs-siam_website/static/js/453.d41c405e.chunk.js",
+    "index.html": "/gncs-siam_website/index.html",
+    "main.207066e3.css.map": "/gncs-siam_website/static/css/main.207066e3.css.map",
+    "main.9e34168e.js.map": "/gncs-siam_website/static/js/main.9e34168e.js.map",
+    "453.d41c405e.chunk.js.map": "/gncs-siam_website/static/js/453.d41c405e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.207066e3.css",
+    "static/js/main.9e34168e.js"
+  ]
+}
