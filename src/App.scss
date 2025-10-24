@@ -1,0 +1,258 @@
+@import './assets/styles/constants';
+
+/* -------------------- Main Container -------------------- */
+.main-container {
+  height: 100dvh;             
+  overflow-y: auto;           
+  overflow-x: hidden;         
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  /* -------------------- Light Mode -------------------- */
+  &.light-mode {
+    color: $font-light-color;
+
+    .container h3 { color: $blue_polimi25; }
+    h3 { color: $font-light-color; }
+    h2 { color: $font-light-color; }
+
+    .scroll-button {
+      color: $blue_polimi25;
+      background-image: linear-gradient(30deg, $blue_polimi2, $blue_polimi3);
+    }
+
+    .topics {
+      color: $font-light-color;
+      background-color: $background-light-color-transparent;
+      border: 1px solid $background-light-color-transparent2;
+
+      &:hover {
+        box-shadow: 0 8px 24px $background-light-color-transparent;
+        border: 1px solid $blue_polimi2;
+      }
+    }
+
+    .timeline-section {
+      background-color: $background-light-color-transparent2;
+      .MuiTimelineContent-root {
+        .MuiTypography-subtitle1 { color: $font-light-color-2; }
+      }
+    }
+
+    .map-container {
+      background-color: $background-light-color-transparent2;
+
+      .map-toggle-group {
+        .MuiToggleButton-root {
+          background-color: $background-light-color-transparent2;
+          color: $font-light-color;
+          transition: all 0.3s ease;
+
+          &:hover { background-color: $background-light-color-transparent; }
+        }
+
+        &.dark .MuiToggleButton-root {
+          background-color: $blue_polimi2;
+          color: $font-dark-color;
+
+          &:hover { background-color: $blue_polimi2; }
+        }
+
+        .Mui-selected {
+          background-color: $blue_polimi2 !important;
+          color: $font-dark-color !important;
+        }
+      }
+    }
+
+    .registration-stepper {
+      .MuiStepIcon-root.Mui-active,
+      .MuiStepIcon-root.Mui-completed { color: $blue_polimi2; }
+
+      .MuiStepContent-root {
+        .step-buttons button {
+          &.continue {
+            background-color: $blue_polimi2;
+            color: $font-dark-color;
+            &:hover { background-color: $blue_polimi3; }
+          }
+
+          &.back {
+            &.disabled {
+              background-color: $font-dark-color;
+              color: $blue_polimi3;
+            }
+            &:not(.disabled) {
+              background-color: $blue_polimi3;
+              color: $font-dark-color;
+              &:hover { background-color: $blue_polimi3; }
+            }
+          }
+        }
+      }
+    }
+
+    .registration-reset {
+      button {
+        background-color: $blue_polimi3;
+        color: $font-dark-color;
+        &:hover { background-color: $blue_polimi2; }
+      }
+    }
+  }
+
+  /* -------------------- Dark Mode -------------------- */
+  &.dark-mode {
+    color: $font-dark-color;
+
+    .container h3 { color: $font-dark-color-2; }
+    h3 { color: $font-dark-color; }
+    h2 { color: $blue_polimi25; }
+
+    .scroll-button {
+      color: $blue_polimi25;
+      background-image: linear-gradient(30deg, $blue_polimi2, $blue_polimi3);
+    }
+
+    .topics {
+      color: $font-dark-color;
+      background-color: $background-dark-color-transparent;
+      border: 1px solid $background-dark-color-transparent2;
+
+      &:hover {
+        box-shadow: 0 8px 24px $background-light-color-transparent;
+        border: 1px solid $blue_polimi2;
+      }
+    }
+
+    .timeline-section {
+      background-color: $background-dark-color-transparent2;
+      .MuiTimelineContent-root {
+        .MuiTypography-subtitle1 { color: $font-dark-color-2; }
+      }
+    }
+
+    .map-container {
+      background-color: $background-dark-color-transparent2;
+
+      .map-toggle-group {
+        .MuiToggleButton-root {
+          background-color: $blue_polimi2;
+          color: $font-dark-color;
+          transition: all 0.3s ease;
+
+          &:hover { background-color: $background-dark-color-transparent; }
+        }
+
+        &.dark .MuiToggleButton-root {
+          background-color: $blue_polimi25;
+          color: $font-dark-color;
+
+          &:hover { background-color: $blue_polimi25; }
+        }
+
+        .Mui-selected {
+          background-color: $blue_polimi25 !important;
+          color: $font-light-color !important;
+        }
+      }
+    }
+
+    .registration-section h2 { color: $font-light-color; }
+    .logo-section h2 { color: $font-light-color; }
+
+    .registration-stepper {
+      color: $font-light-color;
+      .MuiStepIcon-root.Mui-active,
+      .MuiStepIcon-root.Mui-completed { color: $blue_polimi2; }
+
+      .MuiStepContent-root {
+        .step-buttons button {
+          &.continue {
+            background-color: $blue_polimi2;
+            color: $font-dark-color;
+            &:hover { background-color: $blue_polimi3; }
+          }
+
+          &.back {
+            &.disabled {
+              background-color: $font-dark-color;
+              color: $blue_polimi3;
+            }
+            &:not(.disabled) {
+              background-color: $blue_polimi3;
+              color: $font-dark-color;
+              &:hover { background-color: $blue_polimi3; }
+            }
+          }
+        }
+      }
+    }
+
+    .registration-reset {
+      button {
+        background-color: $blue_polimi3;
+        color: $font-dark-color;
+        &:hover { background-color: $blue_polimi2; }
+      }
+    }
+  }
+}
+
+/* -------------------- Background Layer -------------------- */
+.background-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.5s ease, filter 0.5s ease;
+
+  &.light-mode { background-color: $blue_polimi3; }
+  &.dark-mode { background-color: $blue_polimi1; }
+}
+
+/* -------------------- Foreground Content -------------------- */
+.content-overlay {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 100%;
+  pointer-events: auto;
+  box-sizing: border-box;
+}
+
+/* -------------------- Theme Switch -------------------- */
+.theme-switch {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+}
+
+/* -------------------- Bottom / Footer Section -------------------- */
+.bottom-section {
+  width: 100%;
+  text-align: center;
+  padding: 2rem;
+  border-top: 1px solid currentColor;
+  font-size: 0.9rem;
+  opacity: 0.8;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+/* -------------------- Logo Loop -------------------- */
+.logo-loop,
+.logo-loop li {
+  list-style: none;
+}
