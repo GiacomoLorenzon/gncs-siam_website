@@ -21,13 +21,13 @@ import ChecklistIcon from "@mui/icons-material/Checklist";
 
 // Custom Components
 import RegistrationSection from "./RegistrationSection";
+import ScrollTopDiv from "./TopMenu";
 
 interface MainProps {
   mode: "light" | "dark";
 }
 
 function Main({ mode }: MainProps) {
-
   // -------------------- Refs --------------------
   const nextSectionRef = useRef<HTMLDivElement | null>(null);
 
@@ -80,8 +80,10 @@ function Main({ mode }: MainProps) {
   // -------------------- JSX --------------------
   return (
     <div>
+      {/* Menu */}
+      <ScrollTopDiv/>
       {/* Hero Section */}
-      <div className="container" style={{ height: "calc(100vh - 26px)" }}>
+      <div className="container" id="home" style={{ height: "calc(100vh - 26px)" }}>
         <div className="main-section">
           <div className="title">
             <h1>Joint GNCS-SIAM Chapters Meeting</h1>
@@ -252,7 +254,9 @@ function Main({ mode }: MainProps) {
       </div>
 
       {/* Registration */}
-      <RegistrationSection />
+      <div id="registration">
+        <RegistrationSection/>
+      </div>
     </div>
   );
 }

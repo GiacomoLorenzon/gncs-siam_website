@@ -46,6 +46,36 @@
   }
 }
 
+// ------------------------ Menu ------------------------
+.scroll-top-div {
+  position: fixed;
+  top: -60px; /* default hidden above viewport */
+  left: 0;
+  width: 100%;
+  height: 60px;
+  opacity: 0.95;
+  background-color: $blue-polimi2;
+  transition: top 0.3s ease;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom-left-radius: $border-radius;
+  border-bottom-right-radius: $border-radius;
+  backdrop-filter: blur(80px); /* blur effect */
+  -webkit-backdrop-filter: blur(80px); /* Safari support */
+  color: $font-dark-color;
+  font-size: 1em;
+  border: 1px $blue-polimi25;
+  font-weight: 500;
+
+  a {
+    color: $font-dark-color;
+    text-decoration: none;
+    padding: 0 1em;
+  }
+}
+
 // -------------------- Main Section --------------------
 .main-section {
   display: flex;

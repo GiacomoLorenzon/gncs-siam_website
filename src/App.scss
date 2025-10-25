@@ -2,8 +2,8 @@
 
 /* -------------------- Main Container -------------------- */
 .main-container {
-  height: 100dvh;             
-  overflow-y: auto;           
+  /* height: 100dvh; */ /* remove this */
+  overflow-y: visible;  /* or just remove */        
   overflow-x: hidden;         
   position: relative;
   display: flex;
