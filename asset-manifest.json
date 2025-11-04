@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/gncs-siam_website/static/css/main.0f012d48.css",
-    "main.js": "/gncs-siam_website/static/js/main.b0b05e36.js",
+    "main.css": "/gncs-siam_website/static/css/main.b2b5e40a.css",
+    "main.js": "/gncs-siam_website/static/js/main.18d45e40.js",
     "static/js/453.d41c405e.chunk.js": "/gncs-siam_website/static/js/453.d41c405e.chunk.js",
     "index.html": "/gncs-siam_website/index.html",
-    "main.0f012d48.css.map": "/gncs-siam_website/static/css/main.0f012d48.css.map",
-    "main.b0b05e36.js.map": "/gncs-siam_website/static/js/main.b0b05e36.js.map",
+    "main.b2b5e40a.css.map": "/gncs-siam_website/static/css/main.b2b5e40a.css.map",
+    "main.18d45e40.js.map": "/gncs-siam_website/static/js/main.18d45e40.js.map",
     "453.d41c405e.chunk.js.map": "/gncs-siam_website/static/js/453.d41c405e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0f012d48.css",
-    "static/js/main.b0b05e36.js"
+    "static/css/main.b2b5e40a.css",
+    "static/js/main.18d45e40.js"
   ]
 }
