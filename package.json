@@ -2,7 +2,7 @@
   "name": "gncs-siam",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://GiacomoLorenzon.github.io/gncs-siam_website",
+  "homepage": "https://polimi-siam-studentchapter.github.io/home",
   "dependencies": {
     "@appletosolutions/reactbits": "^1.0.3",
     "@emotion/react": "^11.14.0",
