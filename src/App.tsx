@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { FormControlLabel, Switch, styled } from "@mui/material";
+import { FormControlLabel, Switch } from "@mui/material";
 
 /* ---------- Icons ---------- */
 import WbSunnyIcon from "@mui/icons-material/WbSunny";
@@ -9,6 +9,8 @@ import NightsStayIcon from "@mui/icons-material/NightsStay";
 import { LiquidEther, Main } from "./components";
 import Footer from "./components/Footer";
 import LogoSection from "./components/LogoSection";
+import Schedule from "./components/Schedule";
+import Speakers from "./components/Speakers";
 
 /* ---------- Styles ---------- */
 import "./index.scss";
@@ -16,7 +18,7 @@ import "./App.scss";
 
 /* ------------------------------ App ------------------------------ */
 function App() {
-  const [mode, setMode] = useState<"light" | "dark">("light");
+  const [mode, setMode] = useState<"light" | "dark">("dark");
 
   /* ---------- Load saved or system theme ---------- */
   useEffect(() => {
@@ -96,6 +98,8 @@ function App() {
         {/* Sections */}
         <Main mode={mode}/>
         <LogoSection mode={mode} />
+        <Schedule mode={mode} />
+        <Speakers mode={mode} />
         <Footer mode={mode} />
       </div>
     </div>

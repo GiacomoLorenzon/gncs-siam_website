@@ -37,17 +37,17 @@ function Main({ mode }: MainProps) {
 
   // -------------------- Timeline Data --------------------
   const timelineData = [
-    { date: "Jan 10, 2025", event: "Abstract submission deadline", icon: <TaskIcon /> },
-    { date: "Jan 31, 2025", event: "Registration deadline", icon: <HowToRegIcon /> },
-    { date: "Feb 10, 2025", event: "Conference begins", icon: <ChecklistIcon /> },
+    { date: "December 13, 2025", event: "Abstract submission deadline", icon: <TaskIcon /> },
+    { date: "December 25, 2025", event: "Registration deadline", icon: <HowToRegIcon /> },
+    { date: "January 29, 2025", event: "Conference begins", icon: <ChecklistIcon /> },
   ];
 
   // -------------------- Map State --------------------
   const [mapIndex, setMapIndex] = useState(0);
 
   const maps = [
-    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1764.4805339412846!2d9.227924950723565!3d45.478326232416634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c6f67dd11753%3A0x8e30fae1774a3377!2sPolitecnico%20di%20Milano!5e0!3m2!1sit!2sit!4v1761218267733!5m2!1sit!2sit",
-    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.999999999999!2d2.294481315674003!3d48.8583700792874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66f10b4df0e2d%3A0x7c0d2e6f2b8e4a0!2sEiffel%20Tower!5e0!3m2!1sen!2sfr!4v0000000000000!5m2!1sen!2sfr",
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2797.497285366854!2d9.224761410488375!3d45.47992987765999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c6f10b463f97%3A0x68f53b5508fb296d!2sAula%20Rogers!5e0!3m2!1sit!2sit!4v1762177079592!5m2!1sit!2sit",
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2797.492638410096!2d9.225649276188129!3d45.48002347107423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c6f13e309441%3A0x7b80ebeb99531e2d!2sPoliMi%20%C2%B7%20Edificio%2013%20(Trifoglio)!5e0!3m2!1sit!2sit!4v1762177195378!5m2!1sit!2sit",
   ];
 
   const handleToggle = (
@@ -86,11 +86,11 @@ function Main({ mode }: MainProps) {
       <div className="container" id="home" style={{ height: "calc(100vh - 26px)" }}>
         <div className="main-section">
           <div className="title">
-            <h1>Joint GNCS-SIAM Chapters Meeting</h1>
-            <h2>for Young Researchers in Numerical Analysis and Applied Mathematics</h2>
+            <h1>SIAM Chapters meeting</h1>
+            <h2>for young researchers in Applied Mathematics and scientific computing (SCAM)</h2>
             <h3>
-              <PlaceIcon /> Pavia, Italy &nbsp;&nbsp;&nbsp;&nbsp;
-              <EventAvailableIcon /> 10-11 February, 2025
+              <PlaceIcon /> PoliMi, Italy &nbsp;&nbsp;&nbsp;&nbsp;
+              <EventAvailableIcon /> January 29-30, 2026
             </h3>
           </div>
         </div>
@@ -111,7 +111,10 @@ function Main({ mode }: MainProps) {
       <div ref={nextSectionRef} className="about-section">
         <h2>About the conference</h2>
         <p>
-          The first edition of the Joint GNCS-SIAM Chapters Meeting for Young Researchers in Numerical Analysis and Applied Mathematics will take place in Pavia on February 10-11, 2025. This two-day meeting is designed to enhance scientific interaction among young researchers, particularly PhD students and PostDocs, working in the fields of numerical analysis, scientific computing, and applied mathematics. The meeting is organized, with the support of INDAM-GNCS, by the four SIAM Student Chapters in Italy: Università di Pavia - IMATI (UniPV-IMATI), Politecnico di Milano (PoliMi), Scuola Internazionale Superiore di Studi Avanzati (SISSA), Università di Pisa - Scuola Normale Superiore (UniPi-SNS). In addition to keynote presentations and talks by SIAM Student Chapters' representatives, young researchers are encouraged to share their latest findings through contributed talks and posters. Don’t miss this opportunity to showcase your work!
+          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
         </p>
 
         <h3>Included topics</h3>
@@ -138,10 +141,6 @@ function Main({ mode }: MainProps) {
                   // Adjust based on screen size
                   const isWide = isSm ? i % 4 === 0 : i % 5 === 0;
                   const isTall = isSm ? i % 2 === 0 : i % 3 === 0; // small screens all normal height
-
-                  const isFirst = i === 0;
-                  const isLast = i === topics.length - 1;
-
                   return (
                     <Paper
                       className="topics"
@@ -210,7 +209,7 @@ function Main({ mode }: MainProps) {
                     {item.event}
                   </Typography>
 
-                  <Typography variant="subtitle1" sx={{ fontFamily: "inherit" }}>
+                  <Typography variant="subtitle1" sx={{ fontFamily: "inherit", fontWeight: 500 }}>
                     {item.date}
                   </Typography>
                 </TimelineContent>
@@ -220,7 +219,7 @@ function Main({ mode }: MainProps) {
         </div>
 
         <p>
-          The meeting will take place on February 10-11, 2025, at Aula Foscolo, University of Pavia, 27100 Pavia, Italy.
+          The meeting will take place on February 29-30, 2026, at <a href="https://www.mate.polimi.it/events/HPCSIM24/upload/file/ROGERS.pdf" target="_blank" rel="noopener noreferrer">Aula Rogers</a>, Edificio 11, Politecnico di Milano, Milano, Italy.
         </p>
 
         {/* Map Section */}
@@ -249,7 +248,10 @@ function Main({ mode }: MainProps) {
           </div>
         </div>
         <p>
-          A detailed program can be found here. If you have any question, don't hesitate to contact us at gncssiamchapters@gmail.com
+          A detailed program can be found <a href="#schedule">here</a>. If you have any question, don't hesitate to contact us at{" "}
+          <a href="mailto:siam-studentchapter-dmat@polimi.it" target="_blank" rel="noopener noreferrer">
+            siam-studentchapter-dmat@polimi.it
+          </a>.
         </p>
       </div>
 

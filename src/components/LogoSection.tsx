@@ -4,7 +4,7 @@ import { LogoLoop } from "../components/LogoLoop";
 import '../assets/styles/Main.scss'; // make sure the styles are imported
 
 interface LogoSectionProps {
-  mode: "light" | "dark";
+  mode: "dark" | "light";
 }
 
 const LogoSection: React.FC<LogoSectionProps> = ({ mode }) => {
@@ -16,13 +16,11 @@ const LogoSection: React.FC<LogoSectionProps> = ({ mode }) => {
         <LogoLoop
           className="logo-loop"
           logos={[
-            { src: "./logos/logo_polimi.webp", alt: "Polimi" },
-            { src: "./logos/dipmate.png", alt: "Dip Mate" },
-            { src: "./logos/imati.png", alt: "IMATI" },
-            { src: "./logos/logo-indam-gncs.webp", alt: "INDAM" },
-            { src: "./logos/mathlab.png", alt: "SISSA" },
-            { src: "./logos/pavia.png", alt: "Pavia" },
-            { src: "./logos/siam.png", alt: "SIAM" },
+            { src: "./logos/logo_mathLab_bg_v.png", alt: "mathlab" },
+            { src: "./logos/logo_polimi.png", alt: "Polimi" },
+            { src: "./logos/logo-8192px.png", alt: "AIM" },
+            { src: "./logos/matematica_unipi_dx_blu.png", alt: "UniPi" },
+            { src: "./logos/SNS.png", alt: "SNS" },
           ]}
           speed={80}
           direction="left"

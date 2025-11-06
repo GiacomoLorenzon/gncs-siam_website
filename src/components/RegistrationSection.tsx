@@ -11,11 +11,11 @@ import Typography from "@mui/material/Typography";
 const steps = [
   {
     label: "Registration form",
-    description: `Registration for the meeting is free but mandatory, please use the form to register. The deadline for registration is the 31st of January, 2025.`,
+    description: `Registration for the meeting is free but mandatory, please use the form to register. The deadline for registration is December 13, 2025.`,
   },
   {
     label: "Abstract submission form",
-    description: `Contributed talks and posters are welcome, use the form to submit your abstract. The deadline for abstract submission is the 10th of January, 2025. The notification of acceptance will be sent by the 15th of January, 2025.`,
+    description: `Contributed talks and posters are welcome, use the form to submit your abstract. The deadline for abstract submission is December 25, 2025. The notification of acceptance will be sent by the 15th of January, 2025.`,
   },
   {
     label: "Done!",

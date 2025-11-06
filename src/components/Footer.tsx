@@ -23,7 +23,7 @@ const Footer: React.FC<FooterProps> = ({ mode }) => {
       }}
     >
       <p style={{ margin: 0, fontSize: "0.9em", color: "#fff"}}>
-        © {new Date().getFullYear()} Joint GNCS-SIAM Chapters Meeting @ PoliMI
+        © 2026 SIAM Chapters meeting @ PoliMI
       </p>
     </footer>
   );

@@ -15,6 +15,9 @@
   /* -------------------- Light Mode -------------------- */
   &.light-mode {
     color: $font-light-color;
+    a {
+      color: $font-light-color;
+    }
 
     .container h3 { color: $blue_polimi25; }
     h3 { color: $font-light-color; }
@@ -108,6 +111,9 @@
   /* -------------------- Dark Mode -------------------- */
   &.dark-mode {
     color: $font-dark-color;
+    a {
+      color: $font-dark-color;
+    }
 
     .container h3 { color: $font-dark-color-2; }
     h3 { color: $font-dark-color; }
@@ -130,14 +136,18 @@
     }
 
     .timeline-section {
-      background-color: $background-dark-color-transparent2;
+      background: linear-gradient(45deg, #eeeeee00, #cccccc38);
+      backdrop-filter: blur(20px);
+      color: $font-dark-color;
       .MuiTimelineContent-root {
         .MuiTypography-subtitle1 { color: $font-dark-color-2; }
       }
     }
 
     .map-container {
-      background-color: $background-dark-color-transparent2;
+      background: linear-gradient(45deg, #eeeeee00, #cccccc38);
+      backdrop-filter: blur(20px);
+      color: $font-dark-color;
 
       .map-toggle-group {
         .MuiToggleButton-root {
@@ -255,4 +265,65 @@
 .logo-loop,
 .logo-loop li {
   list-style: none;
+}
+
+/* -------------------- Programme -------------------- */
+.dark-mode .schedule-section {
+  .MuiTypography-root,
+  .schedule-card table td,
+  .schedule-card table th {
+    color: $font-dark-color;
+  }
+
+  .schedule-card .MuiAccordionSummary-root .MuiSvgIcon-root {
+    color: $font-dark-color;
+  }
+}
+
+.light-mode .schedule-section {
+  .MuiTypography-root,
+  .schedule-card table td,
+  .schedule-card table th {
+    color: $font-light-color;
+  }
+
+  .schedule-card .MuiAccordionSummary-root .MuiSvgIcon-root {
+    color: $font-light-color;
+  }
+}
+
+.light-mode .schedule-section {
+  .schedule-card {
+    background-color: rgba(255, 255, 255, 0.5); // translucent white for light mode
+    .MuiAccordionSummary-root .MuiSvgIcon-root,
+    table td,
+    table th,
+    .MuiTypography-root {
+      color: $font-light-color;
+    }
+    td, th {
+      border-bottom: 1px solid rgba(40, 40, 40, 0.2);
+    }
+    thead {
+      background: rgba(255, 254, 254, 0.3);
+    }
+  }
+}
+
+.dark-mode .schedule-section {
+  .schedule-card {
+    background-color: $background-dark-color-transparent2;
+    .MuiAccordionSummary-root .MuiSvgIcon-root,
+    table td,
+    table th,
+    .MuiTypography-root {
+      color: $font-dark-color;
+    }
+    td, th {
+      border-bottom: 1px solid rgba(251, 251, 251, 0.2);
+    }
+    thead {
+      background: rgba(255, 254, 254, 0.05);
+    }
+  }
 }

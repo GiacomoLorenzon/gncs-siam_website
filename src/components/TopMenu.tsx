@@ -28,6 +28,8 @@ const ScrollTopDiv: React.FC<ScrollTopDivProps> = ({ height = 60 }) => {
     >
       <a href="#home">Home</a>
       <a href="#registration">Registration</a>
+      <a href="#schedule">Programme</a>
+      <a href="#speakers">Speakers</a>
     </div>
   );
 };
